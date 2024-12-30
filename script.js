@@ -180,15 +180,16 @@ function kiemTra() {
   const cauHoi2 = document.querySelector('input[name="cauhoi2"]:checked');
   const cauHoi3 = document.querySelector('input[name="cauhoi3"]:checked');
   const cauHoi4 = document.querySelector('input[name="cauhoi4"]:checked');
+  const cauHoi5 = document.querySelector('input[name="cauhoi5"]:checked');
 
-  // Kiểm tra xem cả 2 câu hỏi đã được trả lời chưa
-  if (!cauHoi1 || !cauHoi2 || !cauHoi3 || !cauHoi4) {
+  // Kiểm tra xem tất cả câu hỏi đã được trả lời chưa
+  if (!cauHoi1 || !cauHoi2 || !cauHoi3 || !cauHoi4 || !cauHoi5) {
     alert("Phải trả lời hết các câu hỏi đã bạn êi!!! Đã bảo là đừng có ăn gian rồi màaa");
     return;
   }
 
   // Kiểm tra đáp án
-  if (cauHoi1.value === 'a' && cauHoi2.value === 'a' && cauHoi3.value === 'b' && cauHoi4.value === 'b') {
+  if (cauHoi1.value === 'a' && cauHoi2.value === 'a' && cauHoi3.value === 'b' && cauHoi4.value === 'b' && cauHoi5.value === 'a') {
     // Ẩn form câu hỏi
     document.getElementById('myForm').style.display = 'none';
 
